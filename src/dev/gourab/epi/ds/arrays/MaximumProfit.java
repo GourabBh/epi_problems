@@ -28,6 +28,7 @@ public class MaximumProfit {
     class BuySell {
         private int buyTime, sellTime, minTime, maxTime;
 
+        // Encapsulation
         BuySell(int buyTime, int sellTime, int minTime, int maxTime) {
             this.buyTime = buyTime;
             this.sellTime = sellTime;
@@ -83,6 +84,7 @@ public class MaximumProfit {
     public static void main(String[] args) {
         float[] input = { 0.5f, 1.3f, 2.7f, 2.1f, 3.7f, 4.6f, 0.78f, 5.78f };
         MaximumProfit maximumProfit = new MaximumProfit(input);
+        // Concept of OOP
         maximumProfit.setMaxProfit(maximumProfit.findMaxProfit());
         System.out.println("Maximum Profit: " + maximumProfit.getMaxProfit());
     }
